@@ -1,0 +1,17 @@
+services:
+  - type: web
+    name: pembayaran-spp-haikal
+    env: docker
+    plan: free
+    region: singapore
+    envVars:
+      - key: APP_KEY
+        value: base64:7K587rX7mQ3v2O5mS8Kx9yXz4b9mN1w2p3q4r5s6t7u=
+      - key: APP_ENV
+        value: production
+      - key: APP_DEBUG
+        value: "false"
+      - key: DB_CONNECTION
+        value: sqlite
+      - key: RUN_MIGRATIONS
+        value: "true"
